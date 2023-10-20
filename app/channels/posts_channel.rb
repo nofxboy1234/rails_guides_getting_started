@@ -9,5 +9,6 @@ class PostsChannel < ApplicationCable::Channel
 
   def unsubscribed
     # Any cleanup needed when channel is unsubscribed
+    puts '**** PostsChannel#unsubscribed ****'
   end
 end

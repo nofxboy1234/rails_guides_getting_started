@@ -10,6 +10,7 @@ consumer.subscriptions.create(
 
     disconnected() {
       // Called when the subscription has been terminated by the server
+      console.log('**** postsChannel.disconnected() ****')
     },
 
     received(data) {
