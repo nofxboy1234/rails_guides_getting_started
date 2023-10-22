@@ -27,6 +27,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     end
 
     assert_redirected_to post_url(Post.last)
+    assert_equal 'Post was successfully created.', flash[:notice]
   end
 
   test 'should show post' do
